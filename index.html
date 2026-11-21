@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- page title (browser tab) and description (search results) -->
+<title>Olivia Moomaw – Portfolio</title>
+<meta name="description" content="Olivia Moomaw project portfolio containing maps, spatial projects, and internships experiences.">
+
+<!-- Readable font: Atkinson Hyperlegible was designed for legibility. Falls back to system fonts offline. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<!--  style file  -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap">
+    <!-- name (top-left, links back to the top) -->
+    <a class="logo" href="#top" data-edit="4">Olivia Moomaw</a>
+
+    <!-- navigation links. Each href must match a section id further down. -->
+    <nav aria-label="Main" data-edit="5">
+      <ul>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#work">Maps &amp; Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#internships">Work Experience</a></li>
+        <!-- To add a link: <li><a href="#new-id">Label</a></li> and give a section id="new-id" -->
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ BANNER ============ -->
+<!-- banner image in qoute -->
+<div class="banner" role="img" aria-label="Describe your banner image" data-edit="6">
+  <blockquote>
+    <p>“A journey of a thousand miles begins with a single step.”</p>
+    <cite>— Lao Tzu</cite>
+  </blockquote>
+</div>
+
+<main id="top" class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <div class="intro">
+    <!-- name -->
+    <h1 data-edit="7">Olivia Moomaw</h1>
+    
+    <p class="tagline" data-edit="8">GIS map portfolio: ArcGIS Pro maps, ArcGIS Online experience, spatial data analysis projects and internship experience.</p>
+  </div>
+
+  <!-- ============ BIOGRAPHY + PHOTO ============ -->
+  <section id="about">
+    <h2>About me</h2>
+    <div class="bio">
+
+        <!--  headshot. -->
+      <div class="photo" data-edit="10"> 
+        <img src="photos\maps for portfilo\other photos\headshot.png" alt="Headshot of Olivia Moomaw"></div>
+
+      <div>
+        <!--  biography -->
+        <p data-edit="11">Hi, my name is Olivia Moomaw. I am currently pursuing a my double major at the University of North Carolina at Chapel Hill. My interest in GIS stems from my fascination with spatial data and its applications in solving real-world problems. I am particularly drawn to not only the spatial data side of GIS but the ability to optimize the software we use every day to make maps. Through my studies and projects, I hope to use may GIS and CS skills to contribute to the development of innovative GIS software and optimization of geoprocessing.</p>
+        <!-- major, interests, goals  -->
+        <dl class="facts" data-edit="12">
+          <dt>Majors</dt>     <dd>Geospatial Data Science B.S, Computer Science B.A </dd>
+          <dt>Interests</dt> <dd>Terrian analysis, Spatial statistics, Invasive species mapping, UI/UX design, Software development</dd>
+          <dt>Goals</dt>     <dd>Contributing to the betterment of GIS software and geospatial programs </dd>
+        </dl>
+
+        <h3 class="skills-title">Hardskills</h3>
+        <!-- hard skills copy any <li> line to add more. -->
+        <ul class="skills" data-edit="13">
+          <li>ArcGIS Pro</li>
+           <li>QGIS</li>
+           <li>Python</li>
+          <li>R</li>
+          <li>Java</li>
+          <li>Spatial analysis</li>
+          <li>Data visualization</li>
+          <li>Data cleaning</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- ============ Internships ============ 
+      <section id="internships">
+    <h2>Internships</h2>
+    internship info fill in at a later time -->
+
+
+
+  <!-- ============ MAPS & PROJECTS ============ -->
+   <section id="work">
+<h2 class="band">Maps &amp; Projects</h2>    
+  </section>
+    <!-- ================= WORK 1 ================= -->
+    <article class="work" id="map-1">
+
+      <!--  work title  -->
+      <h3 data-edit="14">My First Map</h3>
+
+      <figure class="map">
+        <!-- map image -->
+        <a class="map-slot has-map" href="photos\maps for portfilo\Map1.png" target="_blank" rel="noopener"><img src="photos\maps for portfilo\Map1.png" alt="Describe the map: topic, area, and main pattern" width="2400" height="1800"></a>
+             
+        <!-- caption (area, year, projection) -->
+        <figcaption data-edit="16">Figure 1. Ireland , 2026. Click the map to open it full size.</figcaption>
+      </figure>
+
+      <div class="work-text">
+        <div>
+          <!--  description,  -->
+          <p data-words data-edit="17">This was the very first map I created in GIS! It displays two key variables: school locations with low internet access (represented as point data) and bandwidth access percentages (using polygon or raster data). The map itself is straightforward, using OpenStreetMap as the basemap. Although it incorporates essential map elements such as a scale bar, a north arrow, and a legend, it serves as a great reminder that everyone starts somewhere. Fun fact: I actually built the legend from scratch because I hadn't learned how to insert a layout legend yet!</p>
+          <span class="count" aria-hidden="true"></span>
+        </div>
+
+        <!-- details box (type, data sources, tools, link) -->
+        <dl class="details" data-edit="18">
+          <dt>Type</dt>         <dd>Static map</dd>
+          <dt>Data sources</dt> <dd>Ordnance Survey, Ireland, 2026</dd>
+          <dt>Tools</dt>        <dd>QGIS</dd>
+        </dl>
+      </div>
+    </article>
+
+    <!-- ================= WORK 2  ================= -->
+    <article class="work" id="map-2">
+      <h3 data-edit="14">Water Mapping and Stylization</h3>
+
+      <figure class="map">
+        <a class="map-slot has-map" href="photos\maps for portfilo\map5.png" target="_blank" rel="noopener"><img src="photos\maps for portfilo\map5.png" alt="Describe the map: topic, area, and main pattern" width="2400" height="1800"></a>
+             
+        <!--  caption  -->
+        <figcaption data-edit="16">Figure 2. Portland Oregon water bodies and parks, 2026. Click the map to open it full size.</figcaption>
+      </figure>
+
+      <div class="work-text">
+        <div>
+          <!-- description -->
+          <p data-words data-edit="17">This map highlights the Portland, Oregon tri-metro area along with its surrounding regions. My primary objective in designing it was to establish a cohesive visual style while giving special focus to labeling water bodies. To achieve this look, I selected a certain color palette, typography, and box border styling. Designed for anyone interested in exploring local parks, water bodies, and their spatial relationships, the map offers a layout that can support a wide variety of spatial questions, without focusing on a single specific question in mind.</p>
+          <span class="count" aria-hidden="true"></span>
+        </div>
+
+        <!-- details box (type, data sources, tools, link) -->
+        <dl class="details" data-edit="18">
+          <dt>Type</dt>         <dd>Static map</dd>
+          <dt>Data sources</dt> <dd>Portland Oregon Project File, GEOG455 , 2026</dd>
+          <dt>Tools</dt>        <dd>ArcGIS Pro</dd>
+        </dl>
+      </div>
+    </article>
+
+    <!-- ================= WORK 3 ================= -->
+    <article class="work" id="map-3">
+      <h3 data-edit="14"> Working With Data Normalization</h3>
+
+      
+      <figure class="map">
+
+        <a class="map-slot has-map" href="photos\maps for portfilo\project1.jpg" target="_blank" rel="noopener"><img src="photos\maps for portfilo\project1.jpg" alt="Describe the map: topic, area, and main pattern" width="2400" height="1800"></a>
+             
+        <!--  caption (area, year) -->
+        <figcaption data-edit="16">Figure 3. Portland Oregon Population Variance by class, 2026. Click the map to open it full size.</figcaption>
+      </figure>
+
+      <div class="work-text">
+        <div>
+          <!--  description -->
+          <p data-words data-edit="17">This map uses four classification schemes, Jenks, Equal Interval, Quantile, and Geometric Interval. Covering the upper left side of Portland tri-metro region the data shows the population  per square kilometer (normalization factor). Different from my previous maps the clorapath map was used to learn how to normalize data as well as show the different classification schemes can influence the visuals of a map. The map is useful for understanding the differences in map classification and when you should use each type.</p>
+          <span class="count" aria-hidden="true"></span>
+        </div>
+
+        <!--  details box (type, data sources, tools, link) -->
+        <dl class="details" data-edit="18">
+           <dt>Type</dt>         <dd>Static map</dd>
+          <dt>Data sources</dt> <dd>Portland Oregon Project File, GEOG455 , 2026</dd>
+          <dt>Tools</dt>        <dd>ArcGIS Pro</dd>
+        </dl>
+      </div>
+    </article>
+
+  </section>
+    <!-- ================= WORK 4  ================= -->
+    <article class="work" id="map-4">
+      <h3 data-edit="14"> Visual Hierarchy in Map Design</h3>
+
+      
+      <figure class="map">
+        
+        <a class="map-slot has-map" href="photos\maps for portfilo\map3.jpg" target="_blank" rel="noopener"><img src="photos\maps for portfilo\map3.jpg" alt="Describe the map: topic, area, and main pattern" width="2400" height="1800"></a>
+             
+        <!-- caption (area, year, projection) -->
+        <figcaption data-edit="16">Figure 4. Portland Oregon Roadways, 2026, Click the map to open it full size.</figcaption>
+      </figure>
+
+      <div class="work-text">
+        <div>
+          <!--  description -->
+          <p data-words data-edit="17">This map features Portland's roadways ranked by importance hierarchy. It also included the Location of Portland International airport, parks, and vegetation. The map could be used to trace a path to a park though they aren't labeled. The main goal of this map was to make the most “important” things look like they are the most important. For example the airport draws your attention and then the roads then subsequently down to the base map. The small inset map is used to place the tri-metro region to those unfamiliar with its location. This is probably one of my personal favorite maps I've made becasue I think it looks so much like a "real" map.</p>
+          <span class="count" aria-hidden="true"></span>
+        </div>
+
+        <!-- details box (type, data sources, tools, link) -->
+        <dl class="details" data-edit="18">
+           <dt>Type</dt>         <dd>Static map</dd>
+          <dt>Data sources</dt> <dd>Portland Oregon Project File, GEOG455 , 2026</dd>
+          <dt>Tools</dt>        <dd>ArcGIS Pro, Python</dd>
+        </dl>
+      </div>
+    </article>
+    
+  </section>
+
+   <!-- ================= WORK 5  ================= -->
+    <article class="work" id="map-5">
+      <h3 data-edit="14"> Putting it All Together</h3>
+
+      
+      <figure class="map">
+    
+        <a class="map-slot has-map" href="photos\maps for portfilo\project2 map.jpg" target="_blank" rel="noopener"><img src="photos\maps for portfilo\project2 map.jpg" alt="Describe the map: topic, area, and main pattern" width="2400" height="1800"></a>
+             
+        <!--  caption (area, year, projection) -->
+        <figcaption data-edit="16">Figure 5. Oak Island, 2024, and UTM Zone 17N. Click the map to open it full size.</figcaption>
+      </figure>
+
+      <div class="work-text">
+        <div>
+          <!--  description -->
+          <p data-words data-edit="17">This series of maps highlights key features of Oak Island, categorized by related topics:Roads (Top Left): Displays the roadway network within Oak Island's city boundaries using the visual hierarchy techniques developed in my previous Roadways Map. Building footprints are included to provide helpful context for the roads. Flood Plain (Top Right): Incorporates those same building footprints alongside the floodplains and their corresponding risk levels as according to NCEM. Airports & State-Owned Land (Bottom Left): Focuses on state-owned land, airport locations, and the official city boundary of Oak Island, set on the city's terrain as the basemap.Terrain (Bottom Right): Displays the local topography through terrain elevation contours with the surrounding water bodies.</p>
+          <span class="count" aria-hidden="true"></span>
+        </div>
+
+        <!-- details box (type, data sources, tools, link) -->
+        <dl class="details" data-edit="18">
+           <dt>Type</dt>         <dd>Static map</dd>
+          <dt>Data sources</dt> <dd>NCEM Building footprints, 2024 
+            NCEM Flood Risk Data, 2024 
+            NC OneMap DEM,2024 
+            Brunswick County Record for Public Owned land, 2025</dd>
+          <dt>Tools</dt>        <dd>ArcGIS Pro, Python </dd>
+        </dl>
+      </div>
+    </article>
+    
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p data-edit="20">Questions about my maps or projects?</p>
+
+    <ul class="contact-list" data-edit="21">
+      <li>Email: <a href="mailto:moom@unc.edu">moom@unc.edu</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/olivia-moomaw-04bb61387/">linkedin.com/in/OliviaMoomaw</a></li>
+      <li>GitHub: <a href="https://github.com/moom-unc">GitHub.com/OliviaMoomaw</a></li>
+      <li>ArcGIS Online Works: <a href="https://unc.maps.arcgis.com/apps/dashboards/ba345d755eb04d1da6b2d354ce69ef3a">Link</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap" data-edit="22">© 2026 Olivia Moomaw</div>
+</footer>
+
+<!-- Scripts for ?edit (highlights edit spots) and ?check (word counts). -->
+<script>
+  if (location.search.indexOf('edit') !== -1) {
+    document.body.classList.add('edit-mode');
+  }
+  if (location.search.indexOf('check') !== -1) {
+    document.body.classList.add('check');
+    document.querySelectorAll('[data-words]').forEach(function (p) {
+      var n = p.textContent.trim().split(/\s+/).length;
+      var c = p.parentNode.querySelector('.count');
+      c.textContent = n + ' words' + (n < 75 || n > 150 ? ' (target: 75–150)' : ' ✓');
+      c.classList.toggle('bad', n < 75 || n > 150);
+    });
+  }
+</script>
+
+</body>
+</html>

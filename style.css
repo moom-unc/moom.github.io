@@ -1,0 +1,165 @@
+/* COLORS & FONT. Change these values to restyle the whole site. */
+:root {
+  --bg:        #F1EFE5;  /* oat, page background */
+  --surface:   #FAF9F3;  /* light linen, header and cards */
+  --sand:      #E4DBC6;  /* sand, borders and soft fills */
+  --sage:      #B7C2A5;  /* light sage, tags and highlights */
+  --moss:      #56644A;  /* moss, links and buttons */
+  --moss-dark: #424E38;  /* hover */
+  --clay:      #B98F72;  /* soft clay, focus ring */
+  --text:      #3A362E;  /* warm brown-black */
+  --muted:     #6B655A;  /* secondary text */
+
+  --font: "Atkinson Hyperlegible", "Segoe UI", Verdana, system-ui, sans-serif;
+  --radius: 10px;
+  --max: 1040px;         /* page width */
+}
+
+/* ============ BASE ============ */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font); font-size: 1.125rem; line-height: 1.65; }
+h1, h2, h3 { line-height: 1.25; margin: 0 0 .5em; font-weight: 700; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); }
+h2 { font-size: 1.9rem; }
+h3 { font-size: 1.5rem; }
+p  { margin: 0 0 1em; max-width: 68ch; }
+a  { color: var(--moss); text-underline-offset: 3px; }
+a:hover { color: var(--moss-dark); }
+:focus-visible { outline: 3px solid var(--clay); outline-offset: 3px; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+section { padding: 3.5rem 0; border-top: 1px solid var(--sand); }
+
+/* ============ HEADER / NAV ============ */
+header { background: var(--sage); border-bottom: 1px solid var(--moss-dark); }
+header .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 1.5rem; padding-top: 1rem; padding-bottom: 1rem; }
+.logo { font-weight: 700; font-size: 1.2rem; color: var(--text); text-decoration: none; }
+nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; margin: 0; padding: 0; }
+nav a { text-decoration: none; padding: .25rem 0; }
+nav a:hover { text-decoration: underline; }
+
+/* ============ BANNER ============ */
+.banner {
+  width: 100%;
+  min-height: clamp(200px, 32vw, 380px);   /* was: height */
+  padding: 1.5rem 0;
+  background-color: var(--sage);
+  background-image: url("photos\\maps for portfilo\\other photos\\Chapel_Hill_about_1818.jpg");
+  background-size: cover;
+  background-position: center;
+  display: grid; place-items: center;
+  border-bottom: 1px solid var(--sand);
+}
+.banner-note { background: rgba(250, 249, 243, .85); color: var(--moss-dark); padding: .5rem 1rem; border-radius: var(--radius); font-size: 1rem; }
+/* qoute in the banner */
+.banner blockquote {
+  margin: 0 1.25rem;
+  max-width: 50rem;
+  padding: 1.25rem 1.75rem;
+  background: rgba(250, 249, 243, .88);   /* light linen panel so the text stays readable on a busy image */
+  border-radius: var(--radius);
+  text-align: center;
+}
+.banner blockquote p { font-size: clamp(1.25rem, 2.6vw, 1.7rem); line-height: 1.4; font-style: italic; margin: 0 auto .4rem; }
+
+.banner blockquote cite { font-style: normal; color: var(--muted); font-size: 1.05rem; }
+
+/* ============ INTRO ============ */
+.intro { padding: 3.5rem 0 2.5rem; }
+.intro .tagline { font-size: 1.3rem; color: var(--muted); margin-bottom: 0; }
+
+/* ============ BIOGRAPHY ============ */
+.bio { display: grid; grid-template-columns: 260px 1fr; gap: 2.5rem; align-items: start; margin-top: 1.5rem; }
+.photo {
+  width: 260px; aspect-ratio: 4 / 5; border-radius: var(--radius);
+  background: var(--sage); border: 6px solid var(--sand);
+  display: grid; place-items: center; text-align: center; padding: 1rem;
+  color: var(--moss-dark); font-size: .95rem; overflow: hidden;
+}
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.facts { margin: 0 0 1.25rem; display: grid; grid-template-columns: 9rem 1fr; gap: .35rem 1rem; }
+.facts dt { font-weight: 700; }
+.facts dd { margin: 0; }
+.skills-title { font-size: 1.1rem; margin-bottom: 0; }
+.skills { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: .5rem 0 0; }
+.skills li { background: var(--surface); border: 1px solid var(--sand); padding: .3rem .85rem; border-radius: 99px; font-size: 1rem; }
+
+/* ============ MAPS & PROJECTS ============ */
+.work { padding: 2.5rem 0; border-bottom: 1px solid var(--sand); }
+.work:last-of-type { border-bottom: 0; }
+.work h3 { margin-bottom: .75rem; }
+
+figure.map { margin: 0 0 1.5rem; }
+.map-slot {
+  display: block; width: 100%;
+  aspect-ratio: 4 / 3;   /* change to 3 / 2, 16 / 9, 3 / 4 etc. to match your map's shape */
+  background: var(--sand); border: 2px dashed var(--sage); border-radius: var(--radius);
+  display: grid; place-items: center; text-align: center; padding: 1rem; color: var(--muted);
+  text-decoration: none; overflow: hidden;
+}
+.map-slot img { width: 100%; height: 100%; object-fit: contain; background: #fff; display: block; }
+figcaption { color: var(--muted); font-size: .95rem; margin-top: .5rem; }
+
+.map-slot.has-map {
+  display: block;
+  aspect-ratio: auto;            /* box now takes the map's own shape */
+  padding: .75rem;               /* matte border around the map, like a framed print */
+  background: var(--muted);
+  border: 1px solid var(--clay); /* solid border replaces the dashed placeholder one */
+}
+.map-slot.has-map img {
+  height: auto;
+  object-fit: initial;
+  background: none;
+}
+.work-text { display: grid; grid-template-columns: 1fr 280px; gap: 2rem 2.5rem; align-items: start; }
+.details { background: var(--surface); border: 1px solid var(--sand); border-radius: var(--radius); padding: 1rem 1.25rem; font-size: 1rem; margin: 0; }
+.details dt { font-weight: 700; margin-top: .6rem; }
+.details dt:first-child { margin-top: 0; }
+.details dd { margin: 0; color: var(--muted); }
+.embed { width: 100%; aspect-ratio: 16 / 10; border: 1px solid var(--sand); border-radius: var(--radius); background: #fff; }
+
+/* ============ CONTACT / FOOTER ============ */
+.contact-list { list-style: none; padding: 0; margin: 1rem 0 0; }
+.contact-list li { margin-bottom: .4rem; }
+footer { background: var(--surface); border-top: 1px solid var(--sand); padding: 1.5rem 0; color: var(--muted); font-size: .95rem; }
+
+/* ============ WORD COUNTER (index.html?check) ============ */
+.count { display: none; font-size: .85rem; color: var(--muted); }
+body.check .count { display: block; }
+.count.bad { color: #9A4B2B; font-weight: 700; }
+
+/* ============ EDIT MODE (index.html?edit): highlights every spot to change ============ */
+body.edit-mode [data-edit] {
+  position: relative;
+  outline: 3px dashed #C77B3A; outline-offset: 3px;
+  background-color: rgba(255, 235, 150, .45);
+}
+body.edit-mode [data-edit]::before {
+  content: attr(data-edit);
+  position: absolute; top: .3rem; left: .3rem; z-index: 5;
+  background: #C77B3A; color: #fff; font: 700 .75rem/1 var(--font);
+  padding: .25rem .5rem; border-radius: 99px;
+}
+body.edit-mode::after {
+  content: "Edit mode: the numbers match the EDIT comments in the code";
+  position: fixed; right: 1rem; bottom: 1rem; z-index: 10;
+  background: #3A362E; color: #fff; font-size: .9rem; padding: .5rem .9rem; border-radius: var(--radius);
+}
+.band {
+  background: var(--sage);
+  box-shadow: 0 0 0 100vmax var(--sage);
+  clip-path: inset(0 -100vmax);
+  padding: 1.25rem 0;
+  margin-bottom: 2rem;
+}
+
+/* ============ MOBILE ============ */
+@media (max-width: 760px) {
+  .bio { grid-template-columns: 1fr; }
+  .photo { width: 200px; }
+  .facts { grid-template-columns: 1fr; gap: 0; }
+  .facts dd { margin-bottom: .6rem; }
+  .work-text { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
