@@ -1,4 +1,4 @@
-/* COLORS & FONT. Change these values to restyle the whole site. */
+* COLORS & FONT. Change these values to restyle the whole site. */
 :root {
   --bg:        #F1EFE5;  /* oat, page background */
   --surface:   #FAF9F3;  /* light linen, header and cards */
@@ -44,7 +44,7 @@ nav a:hover { text-decoration: underline; }
   min-height: clamp(200px, 32vw, 380px);   /* was: height */
   padding: 1.5rem 0;
   background-color: var(--sage);
-  background-image: url("Chapel_Hill_about_1818.jpg");
+  background-image: url("photos\\maps for portfilo\\other photos\\Chapel_Hill_about_1818.jpg");
   background-size: cover;
   background-position: center;
   display: grid; place-items: center;
@@ -152,6 +152,41 @@ body.edit-mode::after {
   clip-path: inset(0 -100vmax);
   padding: 1.25rem 0;
   margin-bottom: 2rem;
+}
+/* ============ DASHBOARD LINK CARD ============ */
+.dash-card {
+  display: grid;
+  grid-template-columns: 320px 1fr;      /* thumbnail | text */
+  gap: 2rem;
+  align-items: center;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  background: var(--surface);
+  border: 1px solid var(--sand);
+  border-radius: var(--radius);
+}
+.dash-thumb {
+  display: grid; place-items: center; text-align: center;
+  aspect-ratio: 16 / 10;                 /* change to match your screenshot */
+  background: var(--sand);
+  border: 2px dashed var(--sage);
+  border-radius: var(--radius);
+  color: var(--muted); font-size: .95rem; text-decoration: none;
+  overflow: hidden;
+}
+.dash-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.dash-info h3 { margin-bottom: .4rem; }
+.dash-button {
+  display: inline-block;
+  background: var(--moss); color: #fff;
+  padding: .7rem 1.4rem; border-radius: var(--radius);
+  font-weight: 700; text-decoration: none;
+}
+.dash-button:hover { background: var(--moss-dark); color: #fff; }
+.dash-tools { color: var(--muted); font-size: 1rem; margin: 1rem 0 0; }
+
+@media (max-width: 760px) {
+  .dash-card { grid-template-columns: 1fr; }
 }
 
 /* ============ MOBILE ============ */
