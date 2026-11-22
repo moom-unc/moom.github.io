@@ -31,7 +31,7 @@
         <li><a href="#about">About me</a></li>
         <li><a href="#work">Maps &amp; Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-       <!--> <li><a href="#internships">Work Experience</a></li> -->
+       <!-- <li><a href="#internships">Work Experience</a></li> -->
         <!-- To add a link: <li><a href="#new-id">Label</a></li> and give a section id="new-id" -->
       </ul>
     </nav>
@@ -40,14 +40,12 @@
 
 <!-- ============ BANNER ============ -->
 <!-- banner image in qoute -->
-<div class="banner" role="img" aria-label="Describe your banner image" data-edit="6">
-    <img src="Chapel_Hill_about_1818.jpg" alt="backdrop"></div>
+  <div class="banner" role="img" aria-label="Hand-drawn historic map of Chapel Hill, circa 1818" data-edit="6">
   <blockquote>
     <p>“A journey of a thousand miles begins with a single step.”</p>
     <cite>— Lao Tzu</cite>
   </blockquote>
 </div>
-
 <main id="top" class="wrap">
 
   <!-- ============ INTRO ============ -->
@@ -70,7 +68,7 @@
       <div>
         <!--  biography -->
         <p data-edit="11">Hi, my name is Olivia Moomaw. I am currently pursuing a double major at the University of North Carolina at Chapel Hill. My interest in GIS stems from my fascination with spatial data and its applications in solving real-world problems. I am particularly drawn to not only the spatial data side of GIS but the ability to optimize the software we use every day to make maps. Through my studies, I hope to use my GIS and CS skills to contribute to the development of innovative GIS software and optimization of geoprocessing.</p>
-        <!-- major, interests, goals  -->
+        <!-- major, ests, goals  -->
         <dl class="facts" data-edit="12">
           <dt>Majors</dt>     <dd>Geospatial Data Science B.S, Computer Science B.A </dd>
           <dt>Interests</dt> <dd>Terrian analysis, Spatial statistics, Invasive species mapping, UI/UX design, Software development</dd>
@@ -96,7 +94,6 @@
       <section id="internships">
     <h2>Internships</h2>
     internship info fill in at a later time -->
-
 
 
   <!-- ============ MAPS & PROJECTS ============ -->
@@ -187,10 +184,7 @@
           <dt>Tools</dt>        <dd>ArcGIS Pro</dd>
         </dl>
       </div>
-    </article>
-
-  </section>
-  
+    </article>  
     <!-- ================= WORK 4  ================= -->
     <article class="work" id="map-4">
       <h3 data-edit="14"> Visual Hierarchy in Map Design</h3>
@@ -219,9 +213,6 @@
         </dl>
       </div>
     </article>
-    
-  </section>
-
    <!-- ================= WORK 5  ================= -->
     <article class="work" id="map-5">
       <h3 data-edit="14"> Putting it All Together</h3>
@@ -253,7 +244,18 @@
         </dl>
       </div>
     </article>
-    
+    <article class="dash-card" id="dashboard">
+  <a class="dash-thumb" href="https://unc.maps.arcgis.com/apps/dashboards/ba345d755eb04d1da6b2d354ce69ef3a" target="_blank" rel="noopener">
+    <img src="Dashboard1.png" alt="Screenshot of the Portland Census Dashboard">
+  </a>
+
+  <div class="dash-info">
+    <h3>Portland Census Dashboard</h3>
+    <p>An interactive ArcGIS dashboard exploring census data for Portland, OR.</p>
+    <a class="dash-button" href="https://unc.maps.arcgis.com/apps/dashboards/ba345d755eb04d1da6b2d354ce69ef3a" target="_blank" rel="noopener">Open dashboard</a>
+    <p class="dash-tools">ArcGIS Online, ArcGIS Dashboards</p>
+  </div>
+</article>
   </section>
 
   <!-- ============ CONTACT ============ -->
@@ -273,20 +275,6 @@
 <footer>
   <div class="wrap" data-edit="22">© 2026 Olivia Moomaw</div>
 </footer>
-<!-- ================= DASHBOARD LINK ================= -->
-<article class="dash-card" id="dashboard">
-  <!-- Thumbnail -->
-  <img src="Dashboard1.png" alt="Screenshot of the Portland Census Dashboard">
-    Dashboard thumbnail
-  </a>
-
-  <div class="dash-info">
-    <h3>Portland Census Dashboard</h3>
-    <p>An interactive ArcGIS dashboard exploring census data for Portland, OR.</p>
-    <a class="dash-button" href="https://unc.maps.arcgis.com/apps/dashboards/ba345d755eb04d1da6b2d354ce69ef3a#" target="_blank" rel="noopener">Open dashboard</a>
-    <p class="dash-tools">ArcGIS Online, ArcGIS Dashboards</p>
-  </div>
-</article>
 <!-- Scripts for ?edit (highlights edit spots) and ?check (word counts). -->
 <script>
   if (location.search.indexOf('edit') !== -1) {
