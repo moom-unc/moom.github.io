@@ -44,7 +44,7 @@ nav a:hover { text-decoration: underline; }
   min-height: clamp(200px, 32vw, 380px);   /* was: height */
   padding: 1.5rem 0;
   background-color: var(--sage);
-  background-image: url("Chapel_Hill_about_1818.jpg");
+  background-image: url("Chapel_Hill_banner.jpg");
   background-size: cover;
   background-position: center;
   display: grid; place-items: center;
