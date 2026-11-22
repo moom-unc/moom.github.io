@@ -1,4 +1,4 @@
-* COLORS & FONT. Change these values to restyle the whole site. */
+/* COLORS & FONT. Change these values to restyle the whole site. */
 :root {
   --bg:        #F1EFE5;  /* oat, page background */
   --surface:   #FAF9F3;  /* light linen, header and cards */
@@ -185,9 +185,6 @@ body.edit-mode::after {
 .dash-button:hover { background: var(--moss-dark); color: #fff; }
 .dash-tools { color: var(--muted); font-size: 1rem; margin: 1rem 0 0; }
 
-@media (max-width: 760px) {
-  .dash-card { grid-template-columns: 1fr; }
-}
 
 /* ============ MOBILE ============ */
 @media (max-width: 760px) {
@@ -198,3 +195,7 @@ body.edit-mode::after {
   .work-text { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media (max-width: 760px) {
+  .dash-card { grid-template-columns: 1fr; }
+}
+
